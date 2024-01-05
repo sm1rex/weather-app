@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background-color: #ffffff;
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        div {
+            background-color: #ffffff;
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <h2> Weather App </h2>
+        <label>City Name: </label>
+        <input type="text" name="city" placeholder="City Name">
+        <br>
+        <br>
+        <button type="submit" > Search Now </button>
+    </form>
+
+    <div>
+        <h1> Weather of city {{city}} </h1>
+        <p> Temp: {{temperature}} </p>
+        <p> Min temp: {{min_temperature}} </p>
+        <p> Max temp: {{max_temperature}} </p>
+        <p> Pressure: {{pressure}} </p>
+        <p> Humidity: {{humidity}} </p>
+
+    </div>
+</body>
+</html>
